@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 898234edf156ade4491511a71c27d155
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bone012
+    100002: Bone013
+    100004: Bone013_end
+    100006: Bone014
+    100008: Bone014(mirrored)
+    100010: Bone015
+    100012: Bone015(mirrored)
+    100014: Bone016
+    100016: Bone016(mirrored)
+    100018: Bone016(mirrored)_end
+    100020: Bone016_end
+    100022: Bone020
+    100024: Bone021
+    100026: Bone022
+    100028: Bone022_end
+    100030: Bone023
+    100032: Bone024
+    100034: Bone025
+    100036: Bone025_end
+    100038: Bone029
+    100040: Bone029(mirrored)
+    100042: Bone030
+    100044: Bone030(mirrored)
+    100046: Bone031
+    100048: Bone031(mirrored)
+    100050: Bone032
+    100052: Bone032(mirrored)
+    100054: Bone032(mirrored)_end
+    100056: Bone032_end
+    100058: Bone033
+    100060: Bone033(mirrored)
+    100062: Bone034
+    100064: Bone034(mirrored)
+    100066: Bone035
+    100068: Bone035(mirrored)
+    100070: Bone035(mirrored)_end
+    100072: Bone035_end
+    100074: Bone039
+    100076: Bone040
+    100078: Bone041
+    100080: Bone042
+    100082: Bone043
+    100084: Bone043_end
+    100086: Bone044
+    100088: Bone045
+    100090: Bone046
+    100092: Bone046_end
+    100094: Bone047
+    100096: Bone048
+    100098: Bone049
+    100100: Bone049_end
+    100102: //RootNode
+    100104: Dummy002
+    100106: Dummy003
+    100108: Dummy004
+    100110: Dummy005
+    100112: Dummy006
+    100114: IK Chain002
+    100116: Plane Angle Manipulator001
+    100118: PM3D_Sphere3D_2
+    100120: Sun
+    100122: Sun.001
+    100124: Sun.002
+    400000: Bone012
+    400002: Bone013
+    400004: Bone013_end
+    400006: Bone014
+    400008: Bone014(mirrored)
+    400010: Bone015
+    400012: Bone015(mirrored)
+    400014: Bone016
+    400016: Bone016(mirrored)
+    400018: Bone016(mirrored)_end
+    400020: Bone016_end
+    400022: Bone020
+    400024: Bone021
+    400026: Bone022
+    400028: Bone022_end
+    400030: Bone023
+    400032: Bone024
+    400034: Bone025
+    400036: Bone025_end
+    400038: Bone029
+    400040: Bone029(mirrored)
+    400042: Bone030
+    400044: Bone030(mirrored)
+    400046: Bone031
+    400048: Bone031(mirrored)
+    400050: Bone032
+    400052: Bone032(mirrored)
+    400054: Bone032(mirrored)_end
+    400056: Bone032_end
+    400058: Bone033
+    400060: Bone033(mirrored)
+    400062: Bone034
+    400064: Bone034(mirrored)
+    400066: Bone035
+    400068: Bone035(mirrored)
+    400070: Bone035(mirrored)_end
+    400072: Bone035_end
+    400074: Bone039
+    400076: Bone040
+    400078: Bone041
+    400080: Bone042
+    400082: Bone043
+    400084: Bone043_end
+    400086: Bone044
+    400088: Bone045
+    400090: Bone046
+    400092: Bone046_end
+    400094: Bone047
+    400096: Bone048
+    400098: Bone049
+    400100: Bone049_end
+    400102: //RootNode
+    400104: Dummy002
+    400106: Dummy003
+    400108: Dummy004
+    400110: Dummy005
+    400112: Dummy006
+    400114: IK Chain002
+    400116: Plane Angle Manipulator001
+    400118: PM3D_Sphere3D_2
+    400120: Sun
+    400122: Sun.001
+    400124: Sun.002
+    2100000: 01 - Default
+    2100002: 02 - Default
+    4300000: PM3D_Sphere3D_2
+    7400000: Plane Angle Manipulator001|Dummy003|Take 001|BaseLayer
+    7400002: Plane Angle Manipulator001|Plane Angle Manipulator001|Take 001|BaseLayer
+    7400004: Dummy003|Dummy003|Take 001|BaseLayer
+    9500000: //RootNode
+    10800000: Sun
+    10800002: Sun.001
+    10800004: Sun.002
+    13700000: PM3D_Sphere3D_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
