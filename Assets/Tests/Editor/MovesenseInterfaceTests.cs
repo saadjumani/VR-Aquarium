@@ -1,5 +1,6 @@
 //using NSubstitute;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace UnityTests
 {
@@ -18,7 +19,7 @@ namespace UnityTests
         {
             var movesenseInterface = new MovesenseInterface();
             movesenseInterface.LoadCSV("AccelerationData.csv");
-            Assert.That(movesenseInterface.NextValue(), Is.EquivalentTo(new float[] { 7.987527F, 2.148831F, 5.470188F}));
+            Assert.That(movesenseInterface.NextValue(), Is.EquivalentTo(new float[] { 999026f, 7.987527f, 2.148831f, 5.470188f}));
         }
 
         [Test]
@@ -56,10 +57,17 @@ namespace UnityTests
             Assert.That(() => interface1.LoadCSV("nosuch.csv"), Throws.ArgumentException);
         }
 
-        /*[Test]
+        [Test]
         public void NextValueLoopsThroughTheWholeFile()
         {
+            var interface1 = new MovesenseInterface();
+            interface1.LoadCSV("AccelerationData4Lines.csv");
+            for (int i = 0; i < 10; i++)
+            {
+                var val = interface1.NextValue();
+                Assert.NotNull(val);
+            }
 
-        }*/
+        }
     }
 }
