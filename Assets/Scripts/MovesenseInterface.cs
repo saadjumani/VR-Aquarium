@@ -12,17 +12,8 @@ namespace UnityTests
 
         public Boolean LoadCSV(string csv_unparsed)
         {
-            System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(Application.dataPath);
-            var found = false;
-            foreach (var fi in di.GetFiles())
-            {
-                Debug.Log(fi.Name);
-                if (fi.Name == csv_unparsed)
-                {
-                    found = true;
-                }
-            }
-            if (found == false)
+            var csv = Resources.Load(csv_unparsed.Split('.')[0]);
+            if (csv == null)
             {
                 throw new ArgumentException();
             }
