@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public int userState;
 
     public int shivering;
-    public int heartRate;
+    public int heartRateHigh;
     public int temperature;
     public int notShiveringBuffer;
 
@@ -207,6 +207,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         differenceZ = z-prevZ;
     }
 
+    void updateOverallState(){
+        if(shivering==1 || heartRateHigh == 1 || temperature ==1){
+            userState=1;
+            TextView t = (TextView) findViewById(R.id.UserState);
+            t.setText("Scared");
+        }else{
+            userState=0;
+            TextView t = (TextView) findViewById(R.id.UserState);
+            t.setText("Comfortable");
+        }
+    }
+
+    void sendServerUpdate(){
+
+    }
 
     private void subscribeToSensor(String connectedSerial) {
         // Clean up existing subscription (if there is one)
@@ -244,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 TextView t = (TextView) findViewById(R.id.Shiver);
                                 t.setText("SHIVERING");
                                 shivering=1;
-                                notShiveringBuffer=10;
+                                notShiveringBuffer=150;
                             }
                             else {
                                 if(notShiveringBuffer>0){
@@ -254,6 +269,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                     TextView t = (TextView) findViewById(R.id.Shiver);
                                     t.setText("NOT SHIVERING");
                                     shivering=0;
+
+                                    updateOverallState();
                                 }
                             }
                             accStr =
@@ -265,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                             updateValues(((float) accResponse.body.array[0].x),((float) accResponse.body.array[0].y),((float) accResponse.body.array[0].z));
 
-
+                            updateOverallState();
 
                         }
                     }
@@ -276,8 +293,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         unsubscribe();
                     }
                 });
-
-
 
     }
 
