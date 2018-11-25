@@ -30,6 +30,13 @@ import java.util.ArrayList;
 
 import rx.Subscription;
 
+import java.net.URLConnection;
+import java.net.URL;
+import java.net.HttpURLConnection;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemLongClickListener, AdapterView.OnItemClickListener  {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final int MY_PERMISSIONS_REQUEST_LOCATION = 1;
@@ -219,7 +226,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
-    void sendServerUpdate(){
+    void sendServerUpdate(string param){
+        try {
+            URL url = new URL("http://yskinator.pythonanywhere.com/receive?myparam="+param);
+            HttpURLConnection httpConn = (HttpURLConnection)url.openConnection();
+            httpConn.setRequestMethod("GET");
+            InputStream inputStream = httpConn.getInputStream();
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            String line = bufferedReader.readLine();
+            httpConn.disconnect();
+        }
+        catch(Exception e)
+        {
+            return;
+        }
 
     }
 
