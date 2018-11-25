@@ -226,21 +226,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
-    void sendServerUpdate(string param){
-        try {
-            URL url = new URL("http://yskinator.pythonanywhere.com/receive?myparam="+param);
-            HttpURLConnection httpConn = (HttpURLConnection)url.openConnection();
-            httpConn.setRequestMethod("GET");
-            InputStream inputStream = httpConn.getInputStream();
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            String line = bufferedReader.readLine();
-            httpConn.disconnect();
-        }
-        catch(Exception e)
-        {
-            return;
-        }
+    void sendServerUpdate(string param) throws Exception{
+        URL url = new URL("http://yskinator.pythonanywhere.com/receive?myparam="+param);
+        HttpURLConnection httpConn = (HttpURLConnection)url.openConnection();
+        httpConn.setRequestMethod("GET");
+        InputStream inputStream = httpConn.getInputStream();
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String line = bufferedReader.readLine();
+        httpConn.disconnect();
 
     }
 
