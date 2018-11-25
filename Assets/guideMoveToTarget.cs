@@ -10,11 +10,12 @@ public class guideMoveToTarget : MonoBehaviour {
 
     public float t;
 
+    public float waitTimeBeforeFish=5;
     public int waitTimeBeforeStart;
     public int waitTimeBeforeKiss;
     public int kissDuration;
 
-    public int state=0;
+    public int state=-1;
 
     // Use this for initialization
     void Start()
@@ -25,6 +26,20 @@ public class guideMoveToTarget : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        if (state == -1)
+        {
+            if (t < waitTimeBeforeFish)
+            {
+                t += Time.deltaTime;
+
+            }
+            else
+            {
+                state = 0;
+            }
+        }
+
         if (state == 0)
         {
             transform.LookAt(Target.transform);
