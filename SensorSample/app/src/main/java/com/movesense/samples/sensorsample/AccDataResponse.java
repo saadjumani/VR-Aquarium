@@ -1,9 +1,5 @@
 package com.movesense.samples.sensorsample;
 
-/**
- * Created by lipponep on 22.11.2017.
- */
-
 import com.google.gson.annotations.SerializedName;
 
 public class AccDataResponse {
